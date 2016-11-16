@@ -1,0 +1,13 @@
+/* Inventory Page
+-------------------------------------------------- */
+.img-inventory:hover {
+  opacity: 0.8;
+}
+
+.img-vehicle {
+  margin-bottom: 30px;
+}
+
+.vehicle {
+  max-width: 960px;
+}

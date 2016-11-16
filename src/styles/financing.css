@@ -1,0 +1,12 @@
+/* Financing
+-------------------------------------------------- */
+.vas-form-aligned input {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding-right: 50px;
+}
+
+.vas-form-aligned label {
+  display: inline-block;
+  width: 100px;
+}

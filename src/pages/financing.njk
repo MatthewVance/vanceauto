@@ -1,0 +1,81 @@
+{% extends "base.njk" %}
+{% set activePage = "financing" -%}
+
+{%- block description -%}
+Learn more about financing.
+{%- endblock -%}
+
+{%- block customHead %}
+    <link rel="canonical" href="https://vanceauto.com/financing">
+{%- endblock -%}
+
+{%- block title -%}
+Car Payment Calculator
+{%- endblock -%}
+
+{%- block content -%}
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<main class="container">
+
+  <div class="page-header">
+    <h1>Financing</h1>
+  </div>
+  <p class="text-danger"><em>This is for general payment estimation purposes
+  only, not a car loan quote or credit approval.</em></p>
+
+  <div class="calculator-loan">
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <div class="form">
+            <form class="vas-form-aligned">
+              <div class="accrue-field-amount">
+                <p>
+                  <label>Loan Amount:</label>
+                  <input type="text" class="amount" placeholder="$7,995" size="10" autofocus>
+                </p>
+              </div>
+              <div class="accrue-field-rate">
+                <p>
+                  <label>Rate (APR):</label>
+                  <input type="text" class="rate" placeholder="7%" size="10">
+                </p>
+              </div>
+              <div class="accrue-field-term">
+                <p>
+                  <label>Term:</label>
+                  <input type="text" class="term" placeholder="36m" size="10">
+                  <small class="text-muted">(Format: 12m, 36m, 3y, 7y)</small>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <div>
+            <div class="results">
+              <p>
+                <strong>Monthly Payment:</strong>
+                <br>$231.58</p>
+              <p>
+                <strong>Number of Payments:</strong>
+                <br>36</p>
+              <p>
+                <strong>Total Payments:</strong>
+                <br>$8,336.82</p>
+              <p>
+                <strong>Total Interest:</strong>
+                <br>$836.82</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</main><!-- /.container -->
+{% include "partials/contact.html" %}
+{% endblock %}
+
+  {% block customJS -%}
+  <script src="/vendor/accruejs/jquery.accrue.min.js"></script>
+  <script src="/js/vas-financing.min.js"></script>
+  {% endblock -%}

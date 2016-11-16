@@ -1,0 +1,136 @@
+{% extends "base.njk" %}
+{% set activePage = "hours" -%}
+
+{%- block description -%}
+Our office hours vary at times so please call ahead.
+{%- endblock -%}
+
+{%- block customHead %}
+    <link rel="canonical" href="https://vanceauto.com/hours">
+    <link rel="prefetch" href="/vendor/accruejs/jquery.accrue.min.js">
+    <link rel="prefetch" href="/js/vas-financing.min.js">
+{%- endblock -%}
+
+{%- block title -%}
+Hours
+{%- endblock -%}
+
+{% block content %}
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<main class="container">
+  <div class="page-header">
+    <h1>Hours of Operation</h1>
+  </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Day</th>
+          <th>Open</th>
+          <th>Close</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Monday</th>
+          <td>9:00 am</td>
+          <td>5:00 pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Tuesday</th>
+          <td>9:00 am</td>
+          <td>5:00 pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Wednesday</th>
+          <td colspan="2">Closed</td>
+        </tr>
+        <tr>
+          <th scope="row">Thursday</th>
+          <td>9:00 am</td>
+          <td>5:00 pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Friday</th>
+          <td>9:00 am</td>
+          <td>5:00 pm</td>
+        </tr>
+        <tr>
+          <th scope="row">Saturday</th>
+          <td>9:00 am</td>
+          <td>11:00 am</td>
+        </tr>
+        <tr>
+          <th scope="row">Sunday</th>
+          <td colspan="2">Closed</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="well well-sm">
+      <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+      Our hours vary at times so please call ahead. We are happy to meet
+      with you outside of our normal hours if it is better for you. Please
+      <a href="/contact">contact us</a> to schedule a convenient time.
+    </div>
+
+</main><!-- /.container -->
+{% include "partials/contact.html" %}
+{% endblock %}
+
+{% block jsonLD -%}
+<script type="application/ld+json">
+{
+  "@context":[
+    "https://schema.org",
+    {
+      "@language":"en-us"
+    }
+  ],
+  "@type":"AutoDealer",
+  "address":{
+    "@type":"PostalAddress",
+    "addressCountry":"US",
+    "addressLocality":"Woodbury",
+    "addressRegion":"TN",
+    "contactType":"Mailing address",
+    "postalCode":"37190-1029",
+    "streetAddress":"600 W Main St"
+  },
+  "description":"Vance Auto Sales is a locally owned and operated automobile dealership based in Woodbury, TN.",
+  "name":"Vance Auto Sales",
+  "telephone":"615-563-8398",
+  "openingHoursSpecification":[
+    {
+      "@type":"OpeningHoursSpecification",
+      "closes":"17:00:00",
+      "dayOfWeek":"http://schema.org/Monday",
+      "opens":"09:00:00"
+    },
+    {
+      "@type":"OpeningHoursSpecification",
+      "closes":"17:00:00",
+      "dayOfWeek":"http://schema.org/Tuesday",
+      "opens":"09:00:00"
+    },
+    {
+      "@type":"OpeningHoursSpecification",
+      "closes":"17:00:00",
+      "dayOfWeek":"http://schema.org/Thursday",
+      "opens":"09:00:00"
+    },
+    {
+      "@type":"OpeningHoursSpecification",
+      "closes":"17:00:00",
+      "dayOfWeek":"http://schema.org/Friday",
+      "opens":"09:00:00"
+    },
+    {
+      "@type":"OpeningHoursSpecification",
+      "closes":"11:00:00",
+      "dayOfWeek":"http://schema.org/Saturday",
+      "opens":"09:00:00"
+    }
+  ]
+}
+</script>
+{%- endblock -%}

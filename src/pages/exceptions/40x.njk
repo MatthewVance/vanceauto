@@ -1,0 +1,20 @@
+{% extends "base.njk" %}
+
+{%- block customHead -%}
+    <link rel="prefetch" href="/inventory">
+{%- endblock -%}
+
+{%- block title -%}
+Bad Request
+{%- endblock -%}
+
+{%- block content -%}
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="container">
+    <h1>Forbidden</h1>
+    <div class="well well-sm">
+      You are not permitted to access this page.
+    </div>
+</div>
+{% include "partials/contact.html" %}
+{% endblock %}

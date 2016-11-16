@@ -1,0 +1,20 @@
+{% extends "base.njk" %}
+
+{%- block customHead -%}
+    <link rel="prefetch" href="/inventory">
+{%- endblock -%}
+
+{%- block title -%}
+Server Error
+{%- endblock -%}
+
+{%- block content -%}
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<div class="container">
+    <h1>Error</h1>
+    <div class="well well-sm">
+      An error has occurred.
+    </div>
+</div>
+{% include "partials/contact.html" %}
+{% endblock %}

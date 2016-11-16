@@ -1,0 +1,38 @@
+{# Define nav bar links #}
+{%- set menuLinks = [
+["/", "home", "Home"],
+["/inventory", "inventory", "Inventory"],
+["/location", "location", "Location"],
+["/hours", "hours", "Hours"],
+["/financing", "financing", "Financing"],
+["/contact", "contact", "Contact"]
+] -%}
+{# Explicitly set default to nothing #}
+{% set activePage = activePage|default('') -%}
+<!-- NAVBAR
+    ================================================== -->
+<div class="navbar-wrapper">
+  <div class="container">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand vas-logo" href="/"><span class="glyphicon glyphicon-road" aria-hidden="true"></span> Vance Auto Sales</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+          {% for href, id, caption in menuLinks -%}
+            <li{% if id == activePage %} class="active"{% endif %}><a href="{{ href }}">{{ caption }}</a></li>
+          {% endfor -%}
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </div>
+</div>

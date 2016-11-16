@@ -1,0 +1,128 @@
+/* !
+ * Vance Auto Sales CSS v1.0 (https://vanceauto.com)
+ * Copyright 2016 Vance Auto Sales
+ * Licensed under MIT
+ */
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-brand {
+  font-family: 'Damion', cursive;
+  font-size: 30px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: #d10808;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #d10808;
+}
+
+.btn-primary {
+  background-color: #d10808;
+}
+
+/* Slight shade difference on button hover */
+.btn-primary:hover,
+.btn-primary:active:hover {
+  background-color: #be0707;
+}
+
+.btn-primary:active {
+  background-color: #be0707;
+  background-image: radial-gradient(circle, #be0707 10%, #d10808 11%);
+}
+
+.page-header {
+  margin-top: 0;
+}
+
+.text-danger {
+  color: #d10808;
+}
+
+/* Padding below the footer and lighter body text */
+
+body {
+  padding-bottom: 40px;
+  color: #5a5a5a;
+}
+
+/* Vehicle features table header */
+.panel-default > .panel-heading {
+  background-color: #d10808;
+  color: #fff;
+  font-weight: bold;
+}
+
+.table-hover > tbody > tr:hover {
+  color: #d10808;
+}
+
+/* Sticky header and footer styles */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 70px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  /* Set the fixed height of the footer here */
+  height: 70px;
+  background-color: #eee;
+}
+
+body > .container {
+  padding: 45px 15px 0;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+  /* Navbar positioning foo */
+  .navbar-wrapper {
+    margin-top: 20px;
+  }
+
+  .navbar-wrapper .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .navbar-wrapper .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  /* The navbar becomes detached from the top, so we round the corners */
+  .navbar-wrapper .navbar {
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "vehicles":[
+    {
+      "year":"2013",
+      "make":"Cadillac",
+      "model":"SRX",
+      "trim":"Luxury",
+      "price":"$16,500",
+      "color":"Silver",
+      "miles":"142,567",
+      "category":"SUV",
+      "engine":"3.6 L V6",
+      "vin":"Call",
+      "features":[
+        {
+
+        }
+      ],
+      "thumbnail":"/images/cars/2013-srx/2013-cadillac-srx-front-side",
+      "images":[
+        "/images/cars/2013-srx/2013-cadillac-srx-back-side",
+        "/images/cars/2013-srx/2013-cadillac-srx-front",
+        "/images/cars/2013-srx/2013-cadillac-srx-back"
+        ]
+    },
+    {
+      "year":"2011",
+      "make":"Chevy",
+      "model":"Colorado",
+      "trim":"LS",
+      "price":"$7,995",
+      "color":"All Terrain Blue",
+      "miles":"148,389",
+      "category":"Truck",
+      "engine":"3.7 L 5-cylinder ",
+      "vin":"1GCESBFE0B8127219",
+      "features":[
+        {
+
+        }
+      ],
+      "thumbnail":"/images/cars/2011-colorado/2011-chevy-colorado-front-side",
+      "images":[
+        "/images/cars/2011-colorado/2011-chevy-colorado-back-side",
+        "/images/cars/2011-colorado/2011-chevy-colorado-front",
+        "/images/cars/2011-colorado/2011-chevy-colorado-back"
+        ]
+    },
+    {
+        "year":"2004",
+        "make":"Chevy",
+        "model":"Suburban",
+        "trim":"LS",
+        "price":"$5,995",
+        "color":"White",
+        "miles":"213,274",
+        "category":"SUV",
+        "engine":"5.3 L V8",
+        "thumbnail":"/images/cars/2004-suburban/2004-chevy-suburban-front-side",
+        "vin":"1GNEC16Z44J326223",
+        "features":[
+          {
+
+          }
+        ],
+        "images":[
+          "/images/cars/2004-suburban/2004-chevy-suburban-back-side",
+          "/images/cars/2004-suburban/2004-chevy-suburban-back-passenger-side",
+          "/images/cars/2004-suburban/2004-chevy-suburban-rear"
+          ]
+      },
+      {
+        "year":"2006",
+        "make":"Hyundai",
+        "model":"Tiburon",
+        "trim":"SE",
+        "price":"$5,995",
+        "color":"Sterling Silver Metallic",
+        "miles":"102,863",
+        "category":"Sport",
+        "engine":"3:0 L V6",
+        "vin":"KMHHN65F46U229329",
+        "features":[
+          {
+
+          }
+        ],
+        "thumbnail":"/images/cars/2006-tiburon/2006-hyundai-tiburon",
+        "images":[
+          "/images/cars/2006-tiburon/2006-hyundai-tiburon-back-side",
+          "/images/cars/2006-tiburon/2006-hyundai-tiburon-rear",
+          "/images/cars/2006-tiburon/2006-hyundai-tiburon-front-side"
+          ]
+      },
+      {
+        "year":"2011",
+        "make":"Honda",
+        "model":"Element",
+        "trim":"LX",
+        "price":"$6,995",
+        "color":"Alabaster Silver Metallic",
+        "miles":"259,794",
+        "category":"SUV",
+        "engine":"2.4 L 4-cylinder",
+        "vin":"5J6Yh1h34BL001874",
+        "features":[
+          {
+
+          }
+        ],
+        "thumbnail":"/images/cars/2011-element/2011-honda-element",
+        "images":[
+          "/images/cars/2011-element/2011-honda-element-front",
+          "/images/cars/2011-element/2011-honda-element-back-side",
+          "/images/cars/2011-element/2011-honda-element-rear"
+          ]
+      },
+      {
+        "year":"2007",
+        "make":"Kia",
+        "model":"Sorento",
+        "trim":"EX",
+        "price":"$5,995",
+        "color":"White",
+        "miles":"163,469",
+        "category":"SUV",
+        "engine":"3.8 L V6",
+        "vin":"KNDJD736775697066",
+        "features":[
+          {
+
+          }
+        ],
+        "thumbnail":"/images/cars/2007-sorento/2007-kia-sorento",
+        "images":[
+          "/images/cars/2007-sorento/2007-kia-sorento-back-side-driver",
+          "/images/cars/2007-sorento/2007-kia-sorento-front-side",
+          "/images/cars/2007-sorento/2007-kia-sorento-back-side"
+          ]
+      }
+    ]
+  }

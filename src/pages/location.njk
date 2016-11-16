@@ -1,0 +1,73 @@
+{% extends "base.njk" %}
+{% set activePage = "location" -%}
+
+{% block description -%}
+Vance Auto Sales is located at 600 W Main St in Woodbury, a short drive from Murfreesboro, TN.
+{%- endblock -%}
+
+{%- block customHead %}
+    <link rel="canonical" href="https://vanceauto.com/location" />
+{%- endblock -%}
+
+{% block title -%}
+Find your way to a test drive
+{%- endblock -%}
+
+{%- block content -%}
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<main class="container">
+
+  <div class="page-header">
+    <h1>Location</h1>
+  </div>
+
+    <!-- Responsive iFrame -->
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCBQOIGIi3r2k7ZqlsKhB5CMUuAVxOzUss&amp;q=Vance+Auto+Sales,Woodbury,+TN&amp;attribution_source=Vance+Auto+Sales&amp;attribution_web_url=https://www.vanceauto.com/location/&amp;attribution_ios_deep_link_id=comgooglemaps://?daddr=Vance+Auto+Sales,Woodbury,+TN" allowfullscreen></iframe>
+    </div>
+
+  <div class="well well-sm">
+      <small>
+        We're a conveniently located on highway 70S, a short drive from
+        Murfreesboro. If you need any additional help finding us, please <a
+        href="/contact">contact us</a> for assistance.
+      </small>
+  </div>
+
+</main><!-- /.container -->
+{% include "partials/contact.html" %}
+{% endblock %}
+
+{% block jsonLD -%}
+<script type="application/ld+json">
+{
+  "@context":[
+    "https://schema.org",
+    {
+      "@language":"en-us"
+    }
+  ],
+  "@type":"AutoDealer",
+  "name":"Vance Auto Sales",
+  "description":"Vance Auto Sales is a locally owned and operated automobile dealership based in Woodbury, TN.",
+  "telephone":"615-563-8398",
+  "url":"https://www.vanceauto.com/location",
+  "hasMap":"https://www.google.com/maps/place/Vance+Auto+Sales/@35.828125,-86.075186,16z/data=!4m5!3m4!1s0x0:0x203b4334cd5da670!8m2!3d35.8281248!4d-86.0751864?hl=en-US",
+  "address":{
+    "@type":"PostalAddress",
+    "addressCountry":"US",
+    "addressLocality":"Woodbury",
+    "addressRegion":"TN",
+    "contactType":"Mailing address",
+    "postalCode":"37190-1029",
+    "streetAddress":"600 W Main St"
+  },
+  "@type":"Place",
+  "geo":{
+    "@type":"GeoCoordinates",
+    "latitude":"35.8282613",
+    "longitude":"-86.0773587"
+  }
+}
+</script>
+{%- endblock -%}

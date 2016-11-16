@@ -1,0 +1,103 @@
+{% extends "base.njk" %}
+{% set activePage = "home" -%}
+
+{% block description -%}
+Vance Auto Sales is a locally owned and operated automobile dealership based in Woodbury, TN. For over 30 years we have been providing our clients with quality pre-owned cars.
+{%- endblock -%}
+
+{%- block customHead %}
+    <link rel="prerender" href="/inventory">
+{%- endblock -%}
+
+{% block title -%}
+Find cheap used cars in middle TN
+{%- endblock -%}
+
+{%- block content -%}
+
+  <picture>
+    <source
+      type="image/webp"
+      srcset="
+        /images/vance_auto_sales-1200.webp 1200w,
+        /images/vance_auto_sales-300.webp 300w,
+        /images/vance_auto_sales-815.webp 815w,
+        /images/vance_auto_sales-1163.webp 1163w,
+        /images/vance_auto_sales-1415.webp 1415w,
+        /images/vance_auto_sales-686.webp 686w,
+        /images/vance_auto_sales-1856.webp 1856w,
+        /images/vance_auto_sales-2049.webp 2049w,
+        /images/vance_auto_sales-2240.webp 2240w,
+        /images/vance_auto_sales-2354.webp 2354w,
+        /images/vance_auto_sales.webp 2400w"
+      sizes="100vw" />
+    <source
+      srcset="
+        /images/vance_auto_sales-1200.jpg 1200w,
+        /images/vance_auto_sales-300.jpg 300w,
+        /images/vance_auto_sales-815.jpg 815w,
+        /images/vance_auto_sales-1163.jpg 1163w,
+        /images/vance_auto_sales-1415.jpg 1415w,
+        /images/vance_auto_sales-686.jpg 686w,
+        /images/vance_auto_sales-1856.jpg 1856w,
+        /images/vance_auto_sales-2049.jpg 2049w,
+        /images/vance_auto_sales-2240.jpg 2240w,
+        /images/vance_auto_sales-2354.jpg 2354w,
+        /images/vance_auto_sales.jpg 2400w"
+      sizes="100vw" />
+    <img src="/images/vance_auto_sales-1200.jpg" width="1200" height="500" class="img-responsive home-feature" alt="Photo of Vance Auto Sales in Woodbury" />
+  </picture>
+
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <main class="container">
+
+      <div class="row">
+          <div class="box">
+              <div class="col-lg-12">
+                  <p class="lead">
+                    Thank you for visiting Vance Auto Sales. Randy Vance has been providing
+                    customers like you with quality used cars and trucks at an exceptional
+                    value since 1985.
+                  </p>
+
+                  <p>
+                    While our business has grown over the years, we have not
+                    outgrown the personal touch you have come to expect. In fact,
+                    because we are based in a small town, a lot of our business is
+                    repeat business. As such, you can be confident we are a
+                    dependable and trustworthy place to buy your next vehicle.
+                  </p>
+
+              </div>
+          </div>
+      </div>
+    </main><!-- /.container -->
+{% include "partials/contact.html" %}
+{% endblock %}
+
+{% block jsonLD -%}
+<script type="application/ld+json">
+{
+  "@context": [
+    "http://schema.org",
+    { "@language": "en-us" }
+  ],
+  "@type": "AutoDealer",
+  "name": "Vance Auto Sales",
+  "description": "Vance Auto Sales has been providing customers like you with quality used cars and trucks at an exceptional value since 1985.",
+  "foundingDate": "1985",
+  "founder": "Randy Vance",
+  "telephone": "615-563-8398",
+  "hasMap": "/location",
+  "address":  {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressLocality": "Woodbury",
+    "addressRegion": "TN",
+    "contactType": "Mailing address",
+    "postalCode": "37190-1029",
+    "streetAddress": "600 W Main St"
+  }
+}
+</script>
+{%- endblock -%}

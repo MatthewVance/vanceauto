@@ -1,0 +1,75 @@
+{% extends "base.njk" %}
+{% set activePage = "contact" -%}
+
+{%- block description -%}
+Please do not hesitate to contact us if you have any questions or would like more information.
+{%- endblock -%}
+
+{%- block customHead %}
+    <link rel="canonical" href="https://vanceauto.com/contact">
+    <link rel="prefetch" href="/vendor/accruejs/jquery.accrue.min.js">
+    <link rel="prefetch" href="/js/vas-financing.min.js">
+{%- endblock -%}
+
+{%- block title -%}
+Call or Email Us
+{%- endblock -%}
+
+{% block content %}
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<main class="container">
+
+  <div class="page-header">
+    <h1>Contact</h1>
+  </div>
+     <!-- Row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Telephone <span class="glyphicon glyphicon-phone" aria-hidden="true"></span></h3>
+          <p>Mobile: <a href="tel:+16158496144" onClick="ga('send', 'event', 'Contact', 'click', 'call');">(615) 849-6144</a></p>
+          <p>Local: <a href="tel:+16155638398" onClick="ga('send', 'event', 'Contact', 'click', 'call');">(615) 563-8398</a></p>
+        </div>
+        <div class="col-md-4">
+          <h3>Email <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></h3>
+          <p>Sales Manager: <a href="mailto:sales@vanceauto.com" class="mainbody" onClick="ga('send', 'event', 'Contact', 'click', 'email');">sales@vanceauto.com</a></p>
+       </div>
+        <div class="col-md-4">
+          <h3>Address <span class="glyphicon glyphicon-road" aria-hidden="true"></span></h3>
+            <div>
+                <p>Vance Auto Sales<br />
+                <a href="/location">600 West Main Street</a><br>
+                Woodbury,
+                TN
+                37190<br />
+                United States</p>
+            </div>
+        </div>
+      </div>
+
+</main><!-- /.container -->
+{% endblock %}
+
+{% block jsonLD -%}
+<script type="application/ld+json">
+{
+  "@context": [
+    "https://schema.org",
+    { "@language": "en-us" }
+  ],
+  "@type": "AutoDealer",
+  "name": "Vance Auto Sales",
+  "description": "Vance Auto Sales has been providing customers like with quality used cars and trucks at an exceptional value since 1985.",
+  "telephone": "615-563-8398",
+  "hasMap": "/location",
+  "address":  {
+    "@type": "PostalAddress",
+    "addressCountry": "US",
+    "addressLocality": "Woodbury",
+    "addressRegion": "TN",
+    "contactType": "Mailing address",
+    "postalCode": "37190-1029",
+    "streetAddress": "600 W Main St"
+  }
+}
+</script>
+{%- endblock -%}

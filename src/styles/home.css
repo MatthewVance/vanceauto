@@ -1,0 +1,17 @@
+/* Home Image
+-------------------------------------------------- */
+
+/* RESPONSIVE CSS */
+@media (max-width: 768px) {
+  .home-feature {
+    margin-top: 64px;
+    min-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .home-feature {
+    margin-top: 44px;
+    min-width: 100%;
+  }
+}

@@ -1,0 +1,71 @@
+{% extends "base.njk" %}
+{% set activePage = "inventory" -%}
+
+{%- block description -%}
+View our selection of quality used vehicles which may include cars, trucks, SUVs, and minivans.
+{%- endblock -%}
+
+{%- block customHead %}
+    <link rel="canonical" href="https://vanceauto.com/inventory" />
+    <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/2.0.7/lazysizes.min.js">
+    <link rel="prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.5/js/lightgallery.min.js">
+    <link rel="prefetch" href="/js/vas-gallery.min.js">
+{%- endblock -%}
+
+{%- block title -%}
+Find cheap used cars in middle TN
+{%- endblock -%}
+
+{%- block content -%}
+<!-- Wrap the rest of the page in another container to center all the content. -->
+<main class="container">
+  <div class="page-header">
+    <h1>Used Car Inventory</h1>
+  </div>
+
+  <div class="row">
+
+    {% for vehicle in vehicles -%}
+
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <a href="/cars/{{ vehicle.year }}-{{ vehicle.make | lower}}-{{ vehicle.model | lower}}">
+            <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    {{ vehicle.thumbnail }}-960.webp 960w,
+                    {{ vehicle.thumbnail }}-320.webp 320w,
+                    {{ vehicle.thumbnail }}-1397.webp 1397w,
+                    {{ vehicle.thumbnail }}-1727.webp 1727w,
+                    {{ vehicle.thumbnail }}-1920.webp 1920w"
+                   />
+                  <source
+                    srcset="
+                      {{ vehicle.thumbnail }}-960.jpg 960w,
+                      {{ vehicle.thumbnail }}-320.jpg 320w,
+                      {{ vehicle.thumbnail }}-1397.jpg 1397w,
+                      {{ vehicle.thumbnail }}-1727.jpg 1727w,
+                      {{ vehicle.thumbnail }}-1920.jpg 1920w"
+                    />
+                <img
+                  src="{{ vehicle.thumbnail }}-960.jpg"
+                  class="img-responsive"
+                  width="960" height="640"
+                  alt="{{ vehicle.make | title}} {{ vehicle.model | title}}" />
+            </picture>
+        </a>
+        <div class="caption">
+          <h3>{{ vehicle.make }} {{ vehicle.model }}</h3>
+          <p><a href="/cars/{{ vehicle.year }}-{{ vehicle.make | lower}}-{{ vehicle.model | lower}}" class="btn btn-primary" role="button">View »</a></p>
+        </div>
+      </div>
+    </div>
+
+    {% endfor -%}
+
+  </div>
+
+</main><!-- /.container -->
+{% include "partials/contact.html" %}
+{% endblock %}
