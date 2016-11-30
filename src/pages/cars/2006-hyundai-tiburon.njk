@@ -10,7 +10,7 @@ Find a great deal on a {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
 {%- endblock -%}
 
 {%- block customHead %}
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.5/css/lightgallery.min.css" rel="stylesheet" integrity="sha256-ZArzzDqKQhw3gCgo3IAdKaU69H25iqeHYSzh+yh4ZzQ=" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.6/css/lightgallery.min.css" rel="stylesheet" integrity="sha256-BLaEXwuSM0xmdXBUQS/BS056BP1kvG0jYIgc4sQo1gY=" crossorigin="anonymous">
   {%- for vehicle in vehicles -%}
     {% if vehicle.vin == "KMHHN65F46U229329" %}
     <link rel="canonical" href="https://vanceauto.com/cars/{{ vehicle.year }}-{{ vehicle.make | lower }}-{{ vehicle.model | lower}}">
