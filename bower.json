@@ -20,7 +20,7 @@
     "bootstrap": "^3.3.7",
     "picturefill": "^3.0.2",
     "lazysizes": "^2.0.7",
-    "lightgallery": "^1.3.5",
+    "lightgallery": "^1.3.6",
     "accruejs": "^0.0.1",
     "bootswatch": "^3.3.7"
   }
