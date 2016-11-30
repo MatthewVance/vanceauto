@@ -28,7 +28,7 @@
     "gulp-rev-collector": "^1.0.5",
     "gulp-sitemap": "^4.2.0",
     "gulp-stylefmt": "^1.0.0",
-    "gulp-stylelint": "^3.3.0",
+    "gulp-stylelint": "^3.5.0",
     "gulp-uglify": "^2.0.0",
     "gulp-uncss": "^1.0.6",
     "gulp-webp": "^2.3.0",
