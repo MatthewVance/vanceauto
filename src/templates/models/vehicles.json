@@ -24,6 +24,29 @@
         ]
     },
     {
+      "year":"2006",
+      "make":"Chevy",
+      "model":"Equinox",
+      "trim":"LS",
+      "price":"$2,995",
+      "color":"White",
+      "miles":"195,171",
+      "category":"SUV",
+      "engine":"3.4 L V6",
+      "vin":"2GNDL73F166O97464",
+      "features":[
+        {
+
+        }
+      ],
+      "thumbnail":"/images/cars/2006-equinox/2006-chevy-equinox-front-side",
+      "images":[
+        "/images/cars/2006-equinox/2006-chevy-equinox-back-side",
+        "/images/cars/2006-equinox/2006-chevy-equinox-rear",
+        "/images/cars/2006-equinox/2006-chevy-equinox-front"
+        ]
+    },
+    {
       "year":"2011",
       "make":"Chevy",
       "model":"Colorado",
