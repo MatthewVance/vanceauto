@@ -305,8 +305,9 @@ gulp.task('compress-html', function () {
 // Compress
 gulp.task('compress', ['compress-html'],  function () {
     return gulp.src(['./dist/**/*.{css,js,html,txt,xml}'])
-        .pipe(plugins.zopfli({
-          append: false //don't append .gz since this is for CloudFront
+        .pipe(plugins.gzip({
+          append: false, //don't append .gz since this is for CloudFront
+          gzipOptions: { level: 9 }
         }))
         .pipe(gulp.dest('./dist/'));
 });
@@ -318,14 +319,16 @@ gulp.task('bower', function() {
 
     return gulp.src(mainBowerFiles(/* options */), { base: './bower_components' })
       .pipe(jsFilter)
-      .pipe(plugins.zopfli({
-        append: false //don't append .gz since this is for CloudFront
+      .pipe(plugins.gzip({
+        append: false, //don't append .gz since this is for CloudFront
+        gzipOptions: { level: 9 }
       }))
       .pipe(gulp.dest('./dist/vendor/'))
       .pipe(jsFilter.restore)
       .pipe(cssFilter)
-      .pipe(plugins.zopfli({
-        append: false //don't append .gz since this is for CloudFront
+      .pipe(plugins.gzip({
+        append: false, //don't append .gz since this is for CloudFront
+        gzipOptions: { level: 9 }
       }))
       .pipe(gulp.dest('./dist/vendor/'))
 });
