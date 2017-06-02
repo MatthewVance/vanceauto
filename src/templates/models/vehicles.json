@@ -5,12 +5,12 @@
         "make":"Honda",
         "model":"Element",
         "trim":"LX",
-        "price":"$6,995",
+        "price":"$5,900",
         "color":"Alabaster Silver Metallic",
-        "miles":"259,794",
-        "category":"SUV",
-        "engine":"2.4 L 4-cylinder",
-        "vin":"5J6Yh1h34BL001874",
+        "miles":"259,786",
+        "category":"Crossover",
+        "engine":"2.4L 4-cylinder",
+        "vin":"5J6YH1H34BL001874",
         "features":[
           {
 
@@ -18,9 +18,124 @@
         ],
         "thumbnail":"/images/cars/2011-element/2011-honda-element",
         "images":[
-          "/images/cars/2011-element/2011-honda-element-front",
-          "/images/cars/2011-element/2011-honda-element-back-side",
-          "/images/cars/2011-element/2011-honda-element-rear"
+          "/images/cars/2011-element/2011-honda-element-side",
+          "/images/cars/2011-element/2011-honda-element-rear",
+          "/images/cars/2011-element/2011-honda-element-inside"
+          ]
+      },
+      {
+        "year":"2008",
+        "make":"Chevy",
+        "model":"Malibu",
+        "trim":"LS",
+        "price":"$3,995",
+        "color":"Beige",
+        "miles":"239,683",
+        "category":"Sedan",
+        "engine":"2.4L 4-cylinder",
+        "vin":"1G1ZG57B18F242403",
+        "features":[
+          {
+
+          }
+        ],
+        "thumbnail":"/images/cars/2008-malibu/2008-chevy-malibu",
+        "images":[
+          "/images/cars/2008-malibu/2008-chevy-malibu-back-side",
+          "/images/cars/2008-malibu/2008-chevy-malibu-side",
+          "/images/cars/2008-malibu/2008-chevy-malibu-inside"
+          ]
+      },
+      {
+        "year":"2009",
+        "make":"Chevy",
+        "model":"Traverse",
+        "trim":"LT",
+        "price":"$7,995",
+        "color":"Silver Metallic",
+        "miles":"183,906",
+        "category":"SUV",
+        "engine":"3.6L V6",
+        "vin":"1GNER23D09S103580",
+        "features":[
+          {
+
+          }
+        ],
+        "thumbnail":"/images/cars/2009-traverse/2009-chevy-traverse",
+        "images":[
+          "/images/cars/2009-traverse/2009-chevy-traverse-back-side",
+          "/images/cars/2009-traverse/2009-chevy-traverse-side",
+          "/images/cars/2009-traverse/2009-chevy-traverse-inside"
+          ]
+      },
+      {
+        "year":"2010",
+        "make":"Dodge",
+        "model":"Journey",
+        "trim":"SE",
+        "price":"$4,895",
+        "color":"Bright Silver Metallic",
+        "miles":"161,280",
+        "category":"Crossover",
+        "engine":"3.5L V6",
+        "vin":"2D4PG4FB7AT233939",
+        "features":[
+          {
+
+          }
+        ],
+        "thumbnail":"/images/cars/2010-journey/2010-dodge-journey",
+        "images":[
+          "/images/cars/2010-journey/2010-dodge-journey-back-side",
+          "/images/cars/2010-journey/2010-dodge-journey-front-side",
+          "/images/cars/2010-journey/2010-dodge-journey-inside"
+          ]
+      },
+      {
+        "year":"2007",
+        "make":"Mazda",
+        "model":"3",
+        "trim":"i Sport",
+        "price":"$2,990",
+        "color":"Phantom Purple",
+        "miles":"175,874",
+        "category":"Sedan",
+        "engine":"2.0L 4-cylinder",
+        "vin":"JM1BK12G671673186",
+        "features":[
+          {
+
+          }
+        ],
+        "thumbnail":"/images/cars/2007-3/2007-mazda-3",
+        "images":[
+          "/images/cars/2007-3/2007-mazda-3-back-side",
+          "/images/cars/2007-3/2007-mazda-3-side",
+          "/images/cars/2007-3/2007-mazda-3-inside"
+          ]
+      },
+      {
+        "year":"2008",
+        "make":"Volvo",
+        "model":"S60",
+        "trim":"2.5T",
+        "price":"$5,995",
+        "color":"Maple Red Pearl",
+        "miles":"184,357",
+        "category":"SUV",
+        "engine":"2.5L 5-cylinder Turbo",
+        "vin":"YV1RS592282682893",
+        "features":[
+          {
+
+          }
+        ],
+        "thumbnail":"/images/cars/2008-s60/2008-volvo-s60",
+        "images":[
+          "/images/cars/2008-s60/2008-volvo-s60-back-side",
+          "/images/cars/2008-s60/2008-volvo-s60-front-side",
+          "/images/cars/2008-s60/2008-volvo-s60-rear"
           ]
       }
     ]

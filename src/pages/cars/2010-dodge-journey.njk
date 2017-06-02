@@ -3,7 +3,7 @@
 
 {%- block description -%}
 {% for vehicle in vehicles -%}
-  {% if vehicle.vin == "5J6YH1H34BL001874" -%}
+  {% if vehicle.vin == "2D4PG4FB7AT233939" -%}
 Find a great deal on a {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }} for sale in Woodbury, TN. Visit our site for more details on this {{ vehicle.category }}.
   {%- endif -%}
 {% endfor -%}
@@ -12,7 +12,7 @@ Find a great deal on a {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
 {%- block customHead %}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.3.6/css/lightgallery.min.css" rel="stylesheet" integrity="sha256-BLaEXwuSM0xmdXBUQS/BS056BP1kvG0jYIgc4sQo1gY=" crossorigin="anonymous">
   {%- for vehicle in vehicles -%}
-    {% if vehicle.vin == "5J6YH1H34BL001874" %}
+    {% if vehicle.vin == "2D4PG4FB7AT233939" %}
     <link rel="canonical" href="https://vanceauto.com/cars/{{ vehicle.year }}-{{ vehicle.make | lower }}-{{ vehicle.model | lower}}">
     {%- endif -%}
   {% endfor %}
@@ -22,7 +22,7 @@ Find a great deal on a {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
 
 {%- block title -%}
 {% for vehicle in vehicles -%}
-  {% if vehicle.vin == "5J6YH1H34BL001874" -%}
+  {% if vehicle.vin == "2D4PG4FB7AT233939" -%}
 {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
   {%- endif -%}
 {% endfor -%}
@@ -30,7 +30,7 @@ Find a great deal on a {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
 
 {% block content -%}
 {% for vehicle in vehicles -%}
-  {% if vehicle.vin == "5J6YH1H34BL001874" -%}
+  {% if vehicle.vin == "2D4PG4FB7AT233939" -%}
 <!-- Wrap the rest of the page in another container to center all the content. -->
 <div class="container">
   <div class="page-header">
@@ -162,7 +162,7 @@ Find a great deal on a {{ vehicle.year }} {{ vehicle.make }} {{ vehicle.model }}
 
 {% block jsonLD -%}
 {%- for vehicle in vehicles -%}
-  {%- if vehicle.vin == "5J6YH1H34BL001874" %}
+  {%- if vehicle.vin == "2D4PG4FB7AT233939" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
